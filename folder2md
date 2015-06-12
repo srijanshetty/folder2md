@@ -1,0 +1,8 @@
+#!/bin/zsh
+
+ROOT=$1
+
+for file in $ROOT/**/*; do
+    filename=$(basename $file)
+    echo "[$filename]($file)"
+done
